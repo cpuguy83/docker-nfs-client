@@ -8,5 +8,5 @@ docker run -d --name nfs cpuguy83/nfs-server /path/to/share /path/to/share2 /pat
 ```
 
 ```bash
-docker run -d --name nfs-client --link nfs:nfs cpuguy83/nfs-client /path/on/nfs/server:/path/on/client
+docker run -d --name nfs-client --link nfs:nfs cpuguy83/nfs-client /:/media
 ``` 
